@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - แนะนำหนัง</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>🎬 ยินดีต้อนรับสู่ <span class="highlight">เว็บแนะนำหนัง</span> 🎥</h1>
+            <p>สำรวจโลกภาพยนตร์ตามสภาพอากาศและประเภทที่คุณชื่นชอบ</p>
+            <!-- ปุ่มเข้าสู่การใช้งาน -->
+            <button id="enterButton" class="btn-primary"><i class="fas fa-play"></i> Start</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('enterButton').addEventListener('click', function() {
+            window.location.href = 'main.html'; // นำไปที่หน้า main
+        });
+    </script>
+</body>
+</html>

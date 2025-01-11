@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0a0a0a, #696868); /* สีพื้นหลังสดใส */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(201, 196, 196, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.3em;
+    color: #000000; /* สีหัวข้อ */
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    margin-right: 10px;
+    border: 2px solid #000000; /* ขอบของ input */
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #000000; /* เปลี่ยนสีขอบเมื่อโฟกัส */
+}
+
+button {
+    padding: 15px;
+    background-color: #7a1088; /* สีปุ่ม */
+    color: rgb(122, 122, 122);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #000000; /* เปลี่ยนสีเมื่อชี้ */
+    transform: scale(1.05);
+}
+
+.movie-info {
+    margin-top: 20px;
+}
+
+.movie-info div {
+    border: 2px solid #000000; /* ขอบของหนังที่แนะนำ */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(121, 120, 120, 0.9); /* สีพื้นหลังของหนังที่แนะนำ */
+    transition: transform 0.2s;
+}
+
+.movie-info div:hover {
+    transform: scale(1.02);
+}
+
+.movie-info img {
+    max-width: 100px;
+    border-radius: 5px;
+}
